@@ -13,5 +13,5 @@ In this first stage, I consolidated the core skills required to manage remote se
 
 **Lab Environment:** 
 * Operating System: Ubuntu Server (ARM64)
-* Virtualization: OrbStack (Apple Silicon)# Jornada DevOps: Do Zero à Nuvem
+* Virtualization: OrbStack (Apple Silicon)# 
 
