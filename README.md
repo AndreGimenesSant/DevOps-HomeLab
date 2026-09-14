@@ -15,17 +15,3 @@ In this first stage, I consolidated the core skills required to manage remote se
 * Operating System: Ubuntu Server (ARM64)
 * Virtualization: OrbStack (Apple Silicon)# Jornada DevOps: Do Zero à Nuvem
 
-Este repositório documenta a minha evolução prática no roadmap de Cloud e DevOps. O objetivo é registrar laboratórios práticos, scripts e automações em um ambiente real.
-
-## Fase 1: Fundação Operacional (Concluída)
-Nesta primeira etapa, consolidei a base necessária para gerenciar servidores remotamente sem interface gráfica.
-
-**O que foi dominado na prática:**
-* **Linux & Terminal:** Navegação de diretórios (`cd`, `ls`), manipulação de arquivos (`touch`, `mkdir`, `mv`) e edição via CLI (`nano`).
-* **Segurança e Permissões:** Gerenciamento de acessos no sistema de arquivos usando chaves octais e alfabéticas (`chmod o-r`, `chmod u+rwx`).
-* **Redes Práticas:** Diagnóstico de rede e comunicação HTTP usando ferramentas nativas (`ip a`, `ping`, `curl -I`).
-* **Git & Versionamento:** Configuração de identidade, clonagem via HTTPS, controle de estado (`add`, `commit`) e sincronização remota (`push`).
-
-**Ambiente de Laboratório:** 
-* Sistema Operacional: Ubuntu Server (ARM64)
-* Virtualização: OrbStack (Apple Silicon)# DevOps-HomeLab
