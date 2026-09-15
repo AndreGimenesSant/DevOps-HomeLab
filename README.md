@@ -13,19 +13,15 @@ In this first stage, I consolidated the core skills required to manage remote se
 
 **Lab Environment:** 
 * Operating System: Ubuntu Server (ARM64)
-* Virtualization: OrbStack (Apple Silicon)# 🚀 Jornada DevOps: Do Zero à Nuvem
+* Virtualization: OrbStack (Apple Silicon)
 
-Este repositório documenta a minha evolução prática no roadmap de Cloud e DevOps. O objetivo é registrar laboratórios práticos, scripts e automações em um ambiente real.
+### Phase 2: Containers & Docker (Completed)
 
-## Fase 1: Fundação Operacional (Concluída)
-Nesta primeira etapa, consolidei a base necessária para gerenciar servidores remotamente sem interface gráfica.
+In this phase, I advanced to modern containerization, establishing a lightweight, scalable foundation for application deployment.
 
-**O que foi dominado na prática:**
-* **Linux & Terminal:** Navegação de diretórios (`cd`, `ls`), manipulação de arquivos (`touch`, `mkdir`, `mv`) e edição via CLI (`nano`).
-* **Segurança e Permissões:** Gerenciamento de acessos no sistema de arquivos usando chaves octais e alfabéticas (`chmod o-r`, `chmod u+rwx`).
-* **Redes Práticas:** Diagnóstico de rede e comunicação HTTP usando ferramentas nativas (`ip a`, `ping`, `curl -I`).
-* **Git & Versionamento:** Configuração de identidade, clonagem via HTTPS, controle de estado (`add`, `commit`) e sincronização remota (`push`).
-
-**Ambiente de Laboratório:** 
-* Sistema Operacional: Ubuntu Server (ARM64)
-* Virtualização: OrbStack (Apple Silicon)# DevOps-HomeLab
+**Hands-on Skills Mastered:**
+- **Container Lifecycle Management:** Orchestrated container states using Docker CLI (`run`, `stop`, `rm`, `ps`, `images`).
+- **Network & Port Binding:** Exposed containerized applications (Nginx) to host environments using port mapping (`-p`).
+- **Foreground vs. Background Processing:** Managed daemonized services (`-d`) versus interactive terminal sessions (`-it`).
+- **Infrastructure as Code (IaC) Introduction:** Authored `docker-compose.yml` configuration files to deploy and tear down multi-service environments deterministically using `docker compose up -d` and `down`.
+- **System Administration:** Performed headless Docker Engine installations via shell scripts and managed Linux user group privileges (`usermod -aG`) to secure daemon access.
