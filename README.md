@@ -13,6 +13,7 @@ In this first stage, I consolidated the core skills required to manage remote se
 
 **Lab Environment:** 
 * Operating System: Ubuntu Server (ARM64)
+<<<<<<< HEAD
 * Virtualization: OrbStack (Apple Silicon)
 
 ### Phase 2: Containers & Docker (Completed)
@@ -25,3 +26,6 @@ In this phase, I advanced to modern containerization, establishing a lightweight
 - **Foreground vs. Background Processing:** Managed daemonized services (`-d`) versus interactive terminal sessions (`-it`).
 - **Infrastructure as Code (IaC) Introduction:** Authored `docker-compose.yml` configuration files to deploy and tear down multi-service environments deterministically using `docker compose up -d` and `down`.
 - **System Administration:** Performed headless Docker Engine installations via shell scripts and managed Linux user group privileges (`usermod -aG`) to secure daemon access.
+=======
+* Virtualization: OrbStack (Apple Silicon)# 
+
