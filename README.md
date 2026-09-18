@@ -29,10 +29,16 @@ In this phase, I advanced to modern containerization, establishing a lightweight
 =======
 * Virtualization: OrbStack (Apple Silicon)# 
 
+### Git Version Control & Merge Conflict Resolution
+In addition to basic version control (add, commit, push), I have hands-on experience managing collaborative challenges, specifically resolving Git pull conflicts directly via the Linux terminal. This includes:
+- Configuring global Git reconciliation strategies (`git config --global pull.rebase false`).
+- Manually identifying and resolving code merge markers (HEAD vs. Incoming changes) using terminal-based text editors (`nano`).
+- Ensuring repository integrity before executing the final resolution commits to the remote branch.
+
 ## Phase 3: Real-World Troubleshooting & Bash Automation
 In this module, I simulated a real-world production incident (database connection failure) and utilized advanced Linux debugging techniques to restore the service.
 
-- **Investigation:** Used `find` to locate buried logs and `grep` to filter fatal errors out of thousands of lines.
-- **Analysis:** Applied `diff` to compare configuration files and trace developer misconfigurations.
-- **Automation:** Wrote my first Bash script (`.sh` with the `#!/bin/bash` shebang) to safely execute backups using `cp` with absolute paths.
-- **Security:** Modified file execution keys applying `chmod +x` to grant the kernel permission to run the script.
+- **Investigation:** Used `find` to locate buried application logs and `grep` to filter fatal errors out of unstructured text.
+- **Analysis:** Applied `diff` to compare configuration files and trace developer misconfigurations across environments.
+- **Automation:** Wrote my first Bash script (utilizing the `#!/bin/bash` shebang) to safely execute autonomous backups using `cp` with absolute paths.
+- **Security:** Modified file execution mode applying `chmod +x` to grant the Linux kernel permission to execute the automation scripts.
