@@ -29,3 +29,10 @@ In this phase, I advanced to modern containerization, establishing a lightweight
 =======
 * Virtualization: OrbStack (Apple Silicon)# 
 
+## Phase 3: Real-World Troubleshooting & Bash Automation
+In this module, I simulated a real-world production incident (database connection failure) and utilized advanced Linux debugging techniques to restore the service.
+
+- **Investigation:** Used `find` to locate buried logs and `grep` to filter fatal errors out of thousands of lines.
+- **Analysis:** Applied `diff` to compare configuration files and trace developer misconfigurations.
+- **Automation:** Wrote my first Bash script (`.sh` with the `#!/bin/bash` shebang) to safely execute backups using `cp` with absolute paths.
+- **Security:** Modified file execution keys applying `chmod +x` to grant the kernel permission to run the script.
