@@ -1,44 +1,49 @@
 # DevOps Journey: From Zero to Cloud
 
-This repository documents my practical evolution through the Cloud and DevOps roadmap. The goal is to record hands-on labs, scripts, and automations in a real-world environment.
+This repository documents my practical evolution through the Cloud and DevOps roadmap. The goal is to record hands-on labs, automation scripts, and architectural configurations as I progress toward cloud engineering mastery.
 
-## Phase 1: Operational Foundation (Completed)
+## Phase 1: Operational Foundation
 In this first stage, I consolidated the core skills required to manage remote servers without a graphical interface (Headless OS).
 
 **Hands-on Skills Mastered:**
 * **Linux & Terminal:** Directory navigation (`cd`, `ls`), file manipulation (`touch`, `mkdir`, `mv`), and CLI editing (`nano`).
 * **Security & Permissions:** File system access management using symbolic and octal modes (`chmod o-r`, `chmod u+rwx`).
 * **Practical Networking:** Network diagnostics and HTTP communication using native tools (`ip a`, `ping`, `curl -I`).
-* **Git & Version Control:** Identity configuration, HTTPS cloning, state management (`add`, `commit`), and remote synchronization (`push`).
+* **Git & Version Control:** Identity configuration, HTTPS cloning, state management (`add`, `commit`), and remote synchronization (`push`, `pull`).
 
-**Lab Environment:** 
+**Lab Environment:**
 * Operating System: Ubuntu Server (ARM64)
-<<<<<<< HEAD
 * Virtualization: OrbStack (Apple Silicon)
 
-### Phase 2: Containers & Docker (Completed)
-
+## Phase 2: Containers & Docker
 In this phase, I advanced to modern containerization, establishing a lightweight, scalable foundation for application deployment.
 
 **Hands-on Skills Mastered:**
-- **Container Lifecycle Management:** Orchestrated container states using Docker CLI (`run`, `stop`, `rm`, `ps`, `images`).
-- **Network & Port Binding:** Exposed containerized applications (Nginx) to host environments using port mapping (`-p`).
-- **Foreground vs. Background Processing:** Managed daemonized services (`-d`) versus interactive terminal sessions (`-it`).
-- **Infrastructure as Code (IaC) Introduction:** Authored `docker-compose.yml` configuration files to deploy and tear down multi-service environments deterministically using `docker compose up -d` and `down`.
-- **System Administration:** Performed headless Docker Engine installations via shell scripts and managed Linux user group privileges (`usermod -aG`) to secure daemon access.
-=======
-* Virtualization: OrbStack (Apple Silicon)# 
+* **Container Lifecycle Management:** Orchestrated container states using Docker CLI (`run`, `stop`, `rm`, `ps`, `images`).
+* **Network & Port Binding:** Exposed containerized applications (Nginx) to host environments using port mapping (`-p`).
+* **Processing States:** Managed daemonized services (`-d`) versus interactive terminal sessions (`-it`).
+* **Infrastructure as Code (IaC):** Authored `docker-compose.yml` configuration files to deploy and tear down multi-service environments.
+* **System Administration:** Performed headless Docker Engine installations via shell scripts and managed Linux user group privileges (`usermod -aG`).
 
 ### Git Version Control & Merge Conflict Resolution
-In addition to basic version control (add, commit, push), I have hands-on experience managing collaborative challenges, specifically resolving Git pull conflicts directly via the Linux terminal. This includes:
-- Configuring global Git reconciliation strategies (`git config --global pull.rebase false`).
-- Manually identifying and resolving code merge markers (HEAD vs. Incoming changes) using terminal-based text editors (`nano`).
-- Ensuring repository integrity before executing the final resolution commits to the remote branch.
+In addition to basic version control, I have hands-on experience managing collaborative challenges, specifically resolving merge conflicts:
+* Configuring global Git reconciliation strategies (`git config --global pull.rebase false`).
+* Manually identifying and resolving code merge markers (HEAD vs. Incoming changes) using terminal-based text editors.
+* Ensuring repository integrity before executing the final resolution commits to the remote branch.
 
 ## Phase 3: Real-World Troubleshooting & Bash Automation
-In this module, I simulated a real-world production incident (database connection failure) and utilized advanced Linux debugging techniques to restore the service.
+In this module, I simulated a production incident and utilized advanced Linux debugging techniques to restore the environment, culminating in fully automated recovery processes.
 
-- **Investigation:** Used `find` to locate buried application logs and `grep` to filter fatal errors out of unstructured text.
-- **Analysis:** Applied `diff` to compare configuration files and trace developer misconfigurations across environments.
-- **Automation:** Wrote my first Bash script (utilizing the `#!/bin/bash` shebang) to safely execute autonomous backups using `cp` with absolute paths.
-- **Security:** Modified file execution mode applying `chmod +x` to grant the Linux kernel permission to execute the automation scripts.
+* **Diagnostic Tooling:** Used `find` to locate buried application logs and `grep` to filter fatal errors out of unstructured text.
+* **Configuration Auditing:** Applied `diff` to compare configuration files and trace developer misconfigurations across environments.
+* **Automated Disaster Recovery:** Engineered a robust Bash script to execute systematic backups of production logs. Integrated dynamic variable assignment and command substitution (`$()`) to automatically stamp archives with precise temporal metadata.
+* **Unattended Execution Lifecycle:** Transitioned the backup script from a manual operation to an autonomous lifecycle by configuring the Linux `cron` daemon, ensuring continuous execution without human intervention.
+* **Execution Pathing:** Enforced strict absolute pathing paradigms within automation scripts to prevent execution failures associated with background environments.
+
+## Phase 4: Secure Networking & Remote Administration
+In this module, I secured server access protocols and established encrypted communication channels using industry best practices.
+
+* **Asymmetric Cryptography Authentication:** Deprecated vulnerable password-based logins in favor of enterprise-grade asymmetric cryptography by generating and deploying RSA-4096 SSH key pairs.
+* **Zero Trust & Network Isolation:** Established secure, encrypted remote administrative access to the primary server over a private mesh VPN topology (Tailscale), adhering to Zero Trust architecture principles.
+* **OpenSSH Hardening:** Manually audited and locked down `.ssh` directory and `authorized_keys` file access using strict octal permission modes (`chmod 700` and `chmod 600`) to comply with OpenSSH daemon security standards.
+* **MITM Mitigation:** Managed TOFU (Trust On First Use) host fingerprinting to validate server identity and prevent Man-in-the-Middle network interception.
