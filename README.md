@@ -47,3 +47,15 @@ In this module, I secured server access protocols and established encrypted comm
 * **Zero Trust & Network Isolation:** Established secure, encrypted remote administrative access to the primary server over a private mesh VPN topology (Tailscale), adhering to Zero Trust architecture principles.
 * **OpenSSH Hardening:** Manually audited and locked down `.ssh` directory and `authorized_keys` file access using strict octal permission modes (`chmod 700` and `chmod 600`) to comply with OpenSSH daemon security standards.
 * **MITM Mitigation:** Managed TOFU (Trust On First Use) host fingerprinting to validate server identity and prevent Man-in-the-Middle network interception.
+
+## Phase 5: Advanced Git Troubleshooting & Build Tools
+- **Conflict Resolution**: Mastered manual resolution of Git merge conflicts by isolating and editing `HEAD` and incoming branch markers.
+- **State Recovery**: Utilized `git reset --soft` to perform non-destructive commit rollbacks, ensuring clean repository histories.
+- **Build Ecosystems**: Analyzed the dependency management lifecycle using Node.js and NPM, establishing clear operational boundaries between application development and infrastructure deployment.
+
+## Phase 6: Containerization Architecture (Docker)
+- **Infrastructure as Code**: Engineered custom Docker images using `Dockerfile` to containerize a Node.js web application from raw source code.
+- **Container Lifecycle**: Executed the complete build-to-run pipeline (`docker build`, `docker run -d -p`), configuring port mapping between isolated containers and the host network.
+- **CI/CD Paradigms**: Mapped the enterprise software delivery lifecycle, contrasting the roles of Source Control (GitHub), Build Factories (CI Pipelines), Container Registries (Docker Hub/AWS ECR), and Production runtime environments.
+- **Layer Optimization**: Evaluated Docker Layer Caching mechanisms and architectural distribution efficiency over traditional file transfers.
+
