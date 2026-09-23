@@ -59,3 +59,12 @@ In this module, I secured server access protocols and established encrypted comm
 - **CI/CD Paradigms**: Mapped the enterprise software delivery lifecycle, contrasting the roles of Source Control (GitHub), Build Factories (CI Pipelines), Container Registries (Docker Hub/AWS ECR), and Production runtime environments.
 - **Layer Optimization**: Evaluated Docker Layer Caching mechanisms and architectural distribution efficiency over traditional file transfers.
 
+### Phase 7: Container Registries and Cloud Distribution
+- **Objective:** Master image distribution architecture using external container registries.
+- **Concepts Covered:**
+  - Container Registries vs Local Image Caching.
+  - Authentication and Session Management (`docker login`).
+  - Image Namespace Tagging (`docker tag`).
+  - Cloud Push/Pull Lifecycle (`docker push`, `docker pull`).
+  - Forcing clean state deployments by pruning local images (`docker rmi`).
+- **Practical Lab:** Built a V2 Node.js container image, tagged it with a standard Docker Hub namespace, pushed it to the public registry, purged the local environment to simulate a fresh production server, and successfully ran the container by pulling it directly from the cloud.
